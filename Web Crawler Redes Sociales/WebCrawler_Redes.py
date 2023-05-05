@@ -1,7 +1,8 @@
-import os
-import requests
-from bs4 import BeautifulSoup
-from urllib.request import urlretrieve
+# Importar los módulos necesarios
+import os                             # Para interactuar con el sistema operativo y crear la carpeta "Redes sociales" si no existe
+import requests                       # Para realizar solicitudes HTTP a las páginas web
+from bs4 import BeautifulSoup         # Para analizar el contenido HTML de las páginas web
+from urllib.request import urlretrieve # Para descargar las imágenes de perfil y guardarlas en la carpeta "Redes sociales"
 
 # Establecer una lista de URLs de perfiles de redes sociales que deseamos analizar
 urls = [
@@ -27,19 +28,19 @@ for url in urls:
 
     # Analizar el contenido HTML utilizando BeautifulSoup y extraer información relevante
     soup = BeautifulSoup(html_content, 'html.parser')
-    name_element = soup.find('title')
+    name_element = soup.find('title')  # Buscar el elemento 'title' y obtener su contenido de texto
     if name_element is not None:
-        name = name_element.text.strip()
+        name = name_element.text.strip()  # Eliminar los espacios en blanco y otros caracteres innecesarios del texto
     else:
         name = 'Nombre no encontrado'
-    profile_image_element = soup.find('meta', property='og:image')
+    profile_image_element = soup.find('meta', property='og:image')  # Buscar el elemento 'meta' con la propiedad 'og:image' y obtener su valor
     if profile_image_element is not None:
-        profile_image_url = profile_image_element['content']
+        profile_image_url = profile_image_element['content']  # Obtener el valor del atributo 'content'
     else:
         profile_image_url = None
-    description_element = soup.find('meta', property='og:description')
+    description_element = soup.find('meta', property='og:description')  # Buscar el elemento 'meta' con la propiedad 'og:description' y obtener su valor
     if description_element is not None:
-        description = description_element['content']
+        description = description_element['content']  # Obtener el valor del atributo 'content'
     else:
         description = 'Descripción no encontrada'
 
@@ -49,4 +50,4 @@ for url in urls:
 
     # Descargar la imagen de perfil y guardarla en la carpeta "Redes sociales" con el nombre de la cuenta correspondiente
     if profile_image_url is not None:
-        urlretrieve(profile_image_url, f"Redes sociales/{name}.jpg")
+        urlretrieve(profile_image_url, f"Redes sociales/{name}.jpg")  # Descargar la imagen y guardarla en la carpeta "Redes sociales" con el nombre de la cuenta correspondiente
