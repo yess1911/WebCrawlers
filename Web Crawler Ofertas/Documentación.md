@@ -80,3 +80,11 @@ else
 - Después de que el bloque with se completa, se verifica si el archivo se cerró correctamente utilizando el atributo closed del objeto file.
 - Si file.closed es True, se imprime un mensaje que indica cuántos productos con un descuento del 40% o más se encontraron y se guardaron en el archivo especificado.
 - Si file.closed es False, se imprime un mensaje de error que indica que el archivo no se cerró correctamente.
+ 
+ ---
+
+Copyright © 2023 Yessenia Paola Carbajal Armenta. 
+
+Este proyecto se creó como parte del curso "Programación para Internet" en el año 2023.
+
+---
