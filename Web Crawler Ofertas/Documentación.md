@@ -1,4 +1,4 @@
-# DOCUMENTACIÓN WEB CRAWLER OFERTAS
+# 💲📢🕷 Documentación Web Crawler - Ofertas 🕷📢💲
 
 A continuación se muestra una breve documentación del web crawler de ofertas. El cual básicamente tiene la función de hacer Scraping en la página de ofertas de Mercado Libre México para buscar todos aquellos productos que tengas un 40% de descuento o más y crea un archivo txt donde guarda datos de cada producto, tales como el nombre, el porcentaje de descuento, el precio y el enlace del producto. Además, los imprime en consola.
  # 
