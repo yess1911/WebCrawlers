@@ -81,7 +81,23 @@ else
 - Si file.closed es True, se imprime un mensaje que indica cuántos productos con un descuento del 40% o más se encontraron y se guardaron en el archivo especificado.
 - Si file.closed es False, se imprime un mensaje de error que indica que el archivo no se cerró correctamente.
  
- ---
+
+# 📑📂Outputs📂📑
+ ## Impresión en consola del web crawler de Ofertas.
+ 
+![Imagen impresión en consola del web crawler de Ofertas.](/Img/outputOfertas.png)
+ 
+#
+ ## Generación de archivo en la carpeta raiz.
+ 
+ ![Imagen generación de archivo en la carpeta raiz..](/Img/archivoOfertas.png)
+ 
+#
+ ## Contenido del archivo Ofertas.
+ 
+ ![Imagen contenido del archivo Ofertas.](/Img/archivoOfertas2.png)
+ 
+---
 
 Copyright © 2023 Yessenia Paola Carbajal Armenta. 
 
