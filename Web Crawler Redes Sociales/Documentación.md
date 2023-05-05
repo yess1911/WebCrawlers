@@ -70,7 +70,21 @@ with open(f"Redes sociales/{name}.txt", "w", encoding="utf-8") as file:
 ```
 En este código, la línea with open(...) crea el archivo y lo mantiene abierto mientras se ejecuta el bloque de código indentado que sigue. Una vez que se sale del bloque with, el archivo se cierra automáticamente.
 
-
+# 📑📂Outputs📂📑
+ ## Impresión en consola del web crawler de Redes Sociales.
+ 
+![Imagen impresión en consola del web crawler de Redes Sociales.](/Img/outputRedes.png)
+ 
+#
+ ## Generación de carpeta en la carpeta raiz.
+ 
+ ![Imagen generación de carpeta en la carpeta raiz..](/Img/carpRedes.png)
+ 
+#
+ ## Contenido de la carpeta Redes Sociales.
+ 
+ ![Imagen contenido de la carpeta Redes Sociales.](/Img/archivosRedes.png)
+ 
 ---
 
 Copyright © 2023 Yessenia Paola Carbajal Armenta. 
@@ -78,5 +92,3 @@ Copyright © 2023 Yessenia Paola Carbajal Armenta.
 Este proyecto se creó como parte del curso "Programación para Internet" en el año 2023.
 
 ---
-
-
